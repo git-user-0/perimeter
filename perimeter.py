@@ -3,7 +3,7 @@ import time
 import turtle
 import random
 
-def proveItTiny(v, h):
+def prove_it_tiny(v, h):
     turtle.lt(90)
     for pair in range(2):
         turtle.fd(v * 10)
@@ -11,7 +11,7 @@ def proveItTiny(v, h):
         turtle.fd(h * 10)
         turtle.rt(90)
 
-def proveItSmall(v, h):
+def prove_it_small(v, h):
     turtle.lt(90)
     for pair in range(2):
         turtle.fd(v * 5)
@@ -19,7 +19,7 @@ def proveItSmall(v, h):
         turtle.fd(h * 5)
         turtle.rt(90)
 
-def proveItMedium(v, h):
+def prove_it_medium(v, h):
     turtle.lt(90)
     for pair in range(2):
         turtle.fd(v * 2.5)
@@ -27,7 +27,7 @@ def proveItMedium(v, h):
         turtle.fd(h * 2.5)
         turtle.rt(90)
 
-def proveItLarge(v, h):
+def prov_it_large(v, h):
     turtle.lt(90)
     for pair in range(2):
         turtle.fd(v * 1.25)
@@ -55,26 +55,26 @@ elif number % 2 == 0:
                     v = i
                     l = number - (i * 2)
                     h = int(l / 2)
-                    proveItTiny(v, h)
+                    prov_it_tiny(v, h)
                     turtle.rt(45)
             elif number > 69 and number < 137:
                 for i in range(1, (solution + 1)):
                     v = i
                     l = number - (i * 2)
                     h = int(l / 2)
-                    proveItSmall(v, h)
+                    prove_it_small(v, h)
                     turtle.rt(45)
             elif number > 137 and number < 273:
                 for i in range(1, (solution + 1)):
                     v = i
                     l = number - (i * 2)
                     h = int(l / 2)
-                    proveItMedium(v, h)
+                    prove_it_medium(v, h)
                     turtle.rt(45)
             elif number > 273 and number < 545:
                 for i in range(1, (solution + 1)):
                     v = i
                     l = number - (i * 2)
                     h = int(l / 2)
-                    proveItLarge(v, h)
+                    prove_it_large(v, h)
                     turtle.rt(80)
